@@ -1,6 +1,6 @@
-#Dotfiles
+# Dotfiles
 
-##Dependencies
+## Dependencies
 - 2bwm
 - xsetroot
 - xbindkeys
