@@ -1,0 +1,46 @@
+conky.config = {
+	alignment = 'top_middle',
+	font = '-misc-vhs gothic-medium-r-normal--0-0-0-0-p-0-ascii-0',
+	background = true, 
+	cpu_avg_samples = 2,
+	default_color = 'white',
+	default_outline_color = 'white',
+	default_shade_color = 'white',
+	default_bar_height = 14,
+	default_bar_width = 90,
+	draw_graph_borders = true,
+	draw_outline = false,
+	draw_shades = false,
+	use_xft = false,
+	gap_x = 0,
+	gap_y = 5,
+	net_avg_samples = 2,
+	double_buffer = true,
+	out_to_console = false,
+	extra_newline = false,
+	own_window = false,
+	own_window_type = 'override',
+	own_window_transparent = false,
+	own_window_colour = 'FFFFFF',
+	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+	minimum_width = 1920,
+	maximum_width = 1920,
+	update_interval = 1.0,
+	uppercase = false,
+	use_spacer = 'none',
+	show_graph_scale = false,
+	show_graph_range = false,
+	update_interval = 1,
+	update_interval_on_battery = 1,
+	color1 = '666666',
+}
+
+
+conky.text = [[
+${color1}[Desktop:${exec ~/2bwm-scripts/get-desktop.sh }] ${color}\
+${color1}[${exec date}] ${color}\
+${color1}[BAT:${cat /sys/class/power_supply/BAT0/status}: ${cat /sys/class/power_supply/BAT0/capacity}%] ${color}\
+${color1}[BKL]${execibar 1 ~/2bwm-scripts/get-brightness.sh} ${color}\
+${color1}[VOL:mute:${execi 1 ~/2bwm-scripts/get-mute.sh}]${execibar 1 pamixer --get-volume} ${color}\
+${color1}[MEDIA:${execi 1 ~/2bwm-scripts/get-media.sh}]${color}\
+]]

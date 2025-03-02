@@ -1,0 +1,20 @@
+Xmessage*background: black
+Xmessage*foreground: white
+Xmessage*font:  -misc-vhs gothic-medium-r-normal--0-0-0-0-p-0-ascii-0
+
+xterm*background: black
+xterm*foreground: white
+xterm*font:  -misc-vhs gothic-medium-r-normal--0-0-0-0-p-0-ascii-0
+!xterm*faceName: Dejavu Sans Mono
+!xterm*faceSize: 14
+
+xclock*background: black
+xclock*foreground: white
+
+xosview*background: black
+xosview*foreground: white
+xosview*font: 6x13
+
+lwm*button1: synapse
+
+#include "/home/sampath/2bwm-scripts/xres"
