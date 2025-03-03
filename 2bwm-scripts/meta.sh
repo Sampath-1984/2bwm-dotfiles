@@ -21,7 +21,7 @@ local var=$1
 echo "[general]" > ~/.alacritty.toml
 echo "import = [" >> ~/.alacritty.toml
 echo \"~/.config/alacritty/config.toml\", >> ~/.alacritty.toml
-echo \"~/.config/alacritty/themes/themes/active/solarized_$var.toml\", >> ~/.alacritty.toml
+echo \"~/2bwm-scripts/solarized_$var.toml\", >> ~/.alacritty.toml
 echo "]" >> ~/.alacritty.toml
 }
 
