@@ -78,15 +78,16 @@
 "blugon -o -S 6600"
     Mod4+Shift+Z
 
-###Change display orientation###
-"xrandr -o left"
-    Control+Shift+Left
-"xrandr -o right"
-    Control+Shift+Right
-"xrandr -o normal"
-    Control+Shift+Up
-"xrandr -o inverted"
-    Control+Shift+Down
+####Change display orientation###
+#"xrandr -o left"
+#    Control+Shift+Left
+#"xrandr -o right"
+#    Control+Shift+Right
+#"xrandr -o normal"
+#    Control+Shift+Up
+#"xrandr -o inverted"
+#    Control+Shift+Down
+
 ###CMUS###
 ##play/pause
 #"cmus-remote -u"
